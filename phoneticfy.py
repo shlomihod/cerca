@@ -54,5 +54,4 @@ def build_similar_phonetic_words_db(lang, wordslist_path):
 
 
 if __name__ == '__main__':
-    db.create_all()
     build_similar_phonetic_words_db(sys.argv[1], sys.argv[2])
