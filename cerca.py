@@ -65,7 +65,7 @@ def get_all_similar_phonetic_words(dst_lang, src_word):
 
     similar_phonetic_words = []
 
-    es_src_word = preprocess_es(src_word)
+    src_word = preprocess_es(src_word)
     phonetic_primary, phonetic_secondary = doublemetaphone(src_word)
 
     if phonetic_primary:
