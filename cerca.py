@@ -17,7 +17,7 @@ from models import PhoneticWord, LangWord
 
 from preprocess_metaphone import preprocess_es
 
-translator = Translator(os.environ['CERCA_MST_ID'],os.environ['CERCA_MST_SECRET'])
+translator = Translator(os.environ['CERCA_MST_ID'], os.environ['CERCA_MST_SECRET'])
 
 SUPPORTED_SRC_LANGUAGES = ['es']
 SUPPORTED_DST_LANGUAGES = ['en']
