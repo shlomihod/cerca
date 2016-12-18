@@ -1,0 +1,76 @@
+<!doctype html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Cerca</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+ <link rel="stylesheet" href="/static/style.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.2.3/milligram.min.css" />
+
+</head>
+
+<body>
+
+
+  <a href="https://github.com/shlomihod/cerca"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+  
+  <div class="container">
+    <div class="row">
+      <div class="column">
+    <h1>Cerca</h1>
+    </div>
+    </div>
+    <div class="row">
+      <div class="column column-20">
+        <input type="text" value="falda" id="srcWord">
+      
+      </div>
+      <div class="column">
+        <span class="lang">🇪🇸 ES</span>
+        <span id="status">
+          <span class="status" id="status-text"></span>
+          <img id="loading" style="display: none" src="static/loading.svg">
+        </span>
+      </div>
+      <div class="column">
+        <input class="button button-clear word" type="submit" id="transform" value="Transform">
+      </div>
+    </div>
+      
+    <div class="row">
+      <div class="column column-20"></div>
+      <div class="column column-15">
+        <div class=explain>is</div>
+      </div>
+      
+      <div class="column column">
+        <span class="word" id="translatedWord">skirt</span>
+        <span class="lang">🇬🇧 EN</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column column-20"></div>
+      <div class="column column-15">
+        <div class="explain">&amp; sounds like</div>
+      </div>
+      
+      <div class="column">
+        <span class="word" id="similarPhoneticWord">field</span>
+        <span class="lang">🇬🇧 EN</span>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.min.js"></script>
+
+  <script src="static/transform.js"></script>
+</body>
+</html>

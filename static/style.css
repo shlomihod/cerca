@@ -1,0 +1,12 @@
+.word {
+	font-size: xx-large;
+}
+
+.lang {
+	font-size: xx-small;
+}
+
+.status {
+	font-size: small;
+	color: red;
+}
